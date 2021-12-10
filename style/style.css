@@ -32,12 +32,35 @@
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-
 footer{
     background-color:#adadad;
     color:white;
 }
 
+/*text-expand*/
+.morecontent span {
+  display: none;
+}
+.morelink {
+  display: block;
+}
+
+/*blog article image zoom*/
+.img-hover-zoom{
+  height: 300px;
+  overflow: hidden;
+}
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+/*blog article text align*/
+dl.text-expand{
+  text-align:justify;
+}
 
 
 
