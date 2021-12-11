@@ -32,11 +32,6 @@
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-footer{
-    background-color:#adadad;
-    color:white;
-}
-
 /*text-expand*/
 .morecontent span {
   display: none;
@@ -62,6 +57,15 @@ dl.text-expand{
   text-align:justify;
 }
 
+/*slide down panel*/
+#panel, #panel-2, #panel-3, #panel-4 {
+  display: none;
+}
+/*footer styling*/
+#my-footer{
+  background-color: #d5d5d5;
+  color:white;
+}
 
 
 

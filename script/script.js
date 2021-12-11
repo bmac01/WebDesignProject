@@ -30,3 +30,25 @@ $(document).ready(function(){
         return false;
     });
 });
+
+//AOS library init
+AOS.init();
+
+//slide down & up panels
+$(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+      $("#panel-2").slideDown("slow");
+      $("#panel-3").slideDown("slow");
+      $("#panel-4").slideDown("slow");
+    });
+});
+  
+$(document).ready(function(){
+    $("#panel-4").click(function(){
+      $("#panel").slideUp("slow");
+      $("#panel-2").slideUp("slow");
+      $("#panel-3").slideUp("slow");
+      $("#panel-4").slideUp("slow");
+    });
+});
