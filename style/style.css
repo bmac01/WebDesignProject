@@ -67,7 +67,12 @@ dl.text-expand{
   color:white;
 }
 
-
+/*fix for large screen to stretch mid section content and keep the footer on the bottom on service html*/  
+@media screen and (max-height: 1366px) and (min-width: 700px) {
+  .main-wrapper{
+    height:100vh;
+  }
+}
 
 
 
