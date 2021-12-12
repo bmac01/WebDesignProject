@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="French English language classes">
+        <meta name="keywords" content="French,English,Online,Classes,Free,Demo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon library -->
         <link rel="stylesheet" href="style/style.css"/>
     </head>
@@ -22,18 +27,18 @@
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
+                        <a class="nav-link dropdown-toggle" href="about/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">About Me</a></li>
+                            <li><a class="dropdown-item" href="about/me">About Me</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            <li><a class="dropdown-item" href="about/services">Services</a></li>
                           </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="blog/">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="contact/">CONTACT</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -57,7 +62,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Welcome!</h1>
                         <h3>English-French Lessons</h3>
-                        <button type="button" class="btn btn-outline-light btn-lrg">GET DEMO CLASS</button>
+                        <a href="contact/" class="btn btn-outline-light btn-lrg">GET DEMO CLASS</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -77,31 +82,37 @@
             </button>
         </div>
         <br>
-         <!-- Two Column Section -->     
+        <!-- Two Column Section -->     
         <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-lg-6">
-                <img src="images/tips.jpg" alt="" class="img-fluid">
+            <div class="row padding justify-content-evenly">
+                <div class="col-md-12 col-lg-5 border text-center">
+                    <br>
+                    <img src="images/tips.jpg" class="img-fluid rounded shadow-sm" alt="word tips spelled with wooden blocks">
+                    <br><br>
+                    <h2>My Best Tips for Learning a Language</h2>
+                    <br>
+                    <p>
+                        There are plenty of reasons to make learning a new language your new goal.
+                        Research shows that language learning provides benefits such as boosting brain power and improving memory and can also make you more employable.
+                        Not to mention, learning a language will introduce you to an exciting new culture!
+                    </p>
+                    <a href="blog/" class="btn btn-sm btn-outline-secondary">Read More</a>   
+                </div>
+                <div class="col-md-12 col-lg-6 border text-center">
+                    <br>
+                    <img src="images/notebook.jpg" class="img-fluid rounded shadow-sm" alt="notebook and a pen with a coffee cup next to it">
+                    <br><br>
+                    <h2>French Grammar Mistakes You're Probably Making</h2>
+                    <br>
+                    <p">
+                        Making mistakes is inevitable when you’re learning a new language.
+                        After all, you’re learning complex grammar rules.
+                        Students often make the same French grammar mistakes over and over again.
+                        Being aware of these common grammar mistakes will help you avoid them in the future.
+                    </p>
+                    <a href="blog/" class="btn btn-sm btn-outline-secondary">Read More</a>
+                </div>
             </div>
-            <div class="col-md-12 col-lg-6">
-                <h2>Article 1</h2>
-                <p>Paragraph text</p>
-                <br>
-                <a href="#" class="btn btn-sm btn-outline-secondary">Read More</a>
-            </div>
-        </div>
-        <br>
-        <div class="row padding">
-            <div class="col-md-12 col-lg-6">
-                <h2>Article 2</h2>
-                <p>Paragraph text</p>
-                <br>
-                <a href="#" class="btn btn-sm btn-outline-secondary">Read More</a>
-            </div>
-            <div class="col-lg-6">
-                <img src="images/notebook.jpg" alt="" class="img-fluid">
-            </div>
-        </div>
         </div>
         <br>
         <!-- Footer --> 
@@ -130,18 +141,17 @@
                     <hr class="light">
                     <h5>Social Accounts</h5>
                     <hr class="light">
-                    <p><a href="#" class="fa fa-facebook"></a></p>
-                    <p><a href="#" class="fa fa-instagram"></a></p>
-                    <p><a href="#" class="fa fa-twitter"></a></p>
+                    <p><a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a></p>
+                    <p><a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a></p>
+                    <p><a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a></p>
                 </div>
                 <div class="col-12">
                     <hr class="light">
-                    <h5>Copyright &copy; website.ie</h5>
+                    <h5>Copyright © website.ie</h5>
                 </div>
             </div>
             </div>
         </footer>
-          
-        <script src="../script/script.js"></script>
+        <script src="script/script.js"></script>
     </body>
 </html>
