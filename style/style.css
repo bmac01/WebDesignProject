@@ -90,8 +90,7 @@ video {
   border: 1px grey;
   font-size:large;
   overflow: hidden;
-  background-color:bg-light;
-}
+ }
 
  /* the below code snippet comes from Hunspot - it has been modified slightly */
 #scroll-text {
