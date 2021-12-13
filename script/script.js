@@ -1,23 +1,43 @@
 //form validation function
-(function() {
-		
-  'use strict';
-  window.addEventListener('load', function() {
-    // Get the forms we want to add validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-		}, false);
-    });
-  }, false);
-})();
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
 
+
+window.addEventListener('load', () => {
+
+// Grab all the forms
+var forms = document.getElementsByClassName('needs-validation');
+    
+    // Iterate over each one
+    for (let form of forms) {
+    
+      // Add a 'submit' event listener on each one
+      form.addEventListener('submit', (evt) => {
+      
+        // check if the form input elements have the 'required' attribute  
+        if (!form.checkValidity()) {
+          evt.preventDefault();
+          evt.stopPropagation();
+          } else {
+          // Since form is now valid, prevent default behavior
+          evt.preventDefault();
+          modal.style.display = "block";
+		 
+        }
+        
+        form.classList.add('was-validated');
+        
+      });
+      
+    }
+    
+  });
+  
+//Code to close the Modal box that displays after form submit and relaod page to clear form (by clicking on x)
+span.onclick = function(){
+modal.style.display = "none";
+ window.location.reload();
+}
 
 //text-expand
 $(document).ready(function(){
@@ -75,17 +95,3 @@ $(document).ready(function(){
 });
 
 
-/*const popup = document.querySelector('.popup');
-const close = document.querySelector('.close');
-    window.onload = function(){
-        setTimeout(function(){
-            popup.style.display ="block"   
-
-         //adding time delay to the pop-up
-        }, 2000)
-}
-
-    close.addEventlistener('click',() => {
-        popup.style.display ="none";
-})
-*/

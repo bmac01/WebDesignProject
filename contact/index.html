@@ -86,7 +86,7 @@
 			
 				<div class="p-3 h-200 text-black rounded-3">
 				<h2>Sign Up For Demo Class</h2>
-					<form class="needs-validation" method=alert"Hello" novalidate>
+					<form class="needs-validation" novalidate id="cForm">
 						<div class="col">
                     		<label for ="firstName" class="form-label">First Name</label>
                    			<input type="text" class="form-control" id="firstName" placeholder="" value="" required>
@@ -111,7 +111,7 @@
 						</div>
 						<div class="col">
 							<label for ="phoneNumber" class="form-label">Phone Number</label>
-						 	<input type="tel" class="form-control" id="phoneNumber" placeholder="" required>
+						 	<input type="number" class="form-control" id="phoneNumber" placeholder="Please enter numbers only" required>
 						 	<div class="invalid-feedback">
 							Phone number is required
 						 	</div>  	
@@ -139,10 +139,33 @@
 						</div> 
 						
 						<div class="col">
-							<button class="btn btn-outline-secondary mt-3" id="sendMessage">Submit</button>
+							<button class="btn btn-outline-secondary mt-3" id="sendMessage"  value="Reset form" >Submit</button>
 						</div>	
 					</form>
-					 				
+					<!-- Modal Pop-up for form submission page-->
+					<div class="modal" id="myModal">
+						<div class="modal-dialog">
+						<div class="modal-content">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="../images/image2.jpg" class="p-3 img-fluid" alt="Responsive image">
+							</div>
+							<div class="col-md-6">
+								<div class="modal-header">
+								<h3 class="modal-title" id="ModalLabel">Submitted</h3>
+								<button type="button" class="close" aria-label="Close">
+									<span id="s1" aria-hidden="true">&times;</span>
+								</button>
+								</div>
+								<div class="modal-body">
+								<p id="modalOuput">Thank you for signing up to a Demo Class. I will contact you by email to arrange the class.</p>
+								</div>
+							</div>
+						</div>		
+						</div>
+						</div>
+					</div>
+					<!-- Modal Pop-up ends here-->			 
 				</div>	
 				</div>
 			</div>

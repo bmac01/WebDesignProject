@@ -92,7 +92,7 @@ video {
   overflow: hidden;
  }
 
- /* the below code snippet comes from Hunspot - it has been modified slightly */
+ /* the below code snippet comes from Hubspot - it has been modified slightly */
 #scroll-text {
   text-align: right;
 
@@ -131,7 +131,49 @@ video {
   }
 }
 
+/* The Modal (background) */
+.modal,.modal1 {
+  display: hidden; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  float: left;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/* Modal Content/Box */
+.modal-content,.modal-content1 {
+  background-color: #fefefe;
+  padding: 2px;
+  border: 1px solid #888;
+  width: 100%; 
+ }
+
+/* The Close Button */
+.close,.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,.close1:hover,.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
