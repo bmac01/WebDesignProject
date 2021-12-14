@@ -1,6 +1,6 @@
 //form validation function
 var modal = document.getElementById("myModal");
-var span = document.getElementsByClassName("close")[0];
+buttonClose = document.getElementById("buttonClose");
 
 
 window.addEventListener('load', () => {
@@ -34,7 +34,7 @@ var forms = document.getElementsByClassName('needs-validation');
   });
   
 //Code to close the Modal box that displays after form submit and relaod page to clear form (by clicking on x)
-span.onclick = function(){
+buttonClose.onclick = function(){
 modal.style.display = "none";
  window.location.reload();
 }
