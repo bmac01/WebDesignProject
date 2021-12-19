@@ -42,3 +42,5 @@ buttonClose.onclick = function(){
 modal.style.display = "none";
  window.location.reload();
 }
+
+
