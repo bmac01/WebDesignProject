@@ -182,8 +182,8 @@ input[type=number] {
   bottom: -100%;
   left: 0;
   right: 0;
-  background: #2f3640;
-  color: #f5f6fa;
+  background: #A0A9B2;
+  color: white;
   padding: 0 32px;
   transition: 400ms;
 }
@@ -193,11 +193,11 @@ input[type=number] {
 }
 
 .cookie-container a {
-  color: #f5f6fa;
+  color: white;
 }
 
 .cookie-btn {
-  background: #e84118;
+  background: #6c757d;
   border: 0;
   color: #f5f6fa;
   padding: 5px 5px;
