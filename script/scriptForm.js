@@ -1,13 +1,14 @@
 //form validation function
 var modal = document.getElementById("myModal");
-buttonClose = document.getElementById("buttonClose");
+var buttonClose = document.getElementById("buttonClose");
 
 
 window.addEventListener('load', () => {
 
 // Grab all the forms
 var forms = document.getElementsByClassName('needs-validation');
-    
+
+  
     // Iterate over each one
     for (let form of forms) {
     
@@ -21,7 +22,10 @@ var forms = document.getElementsByClassName('needs-validation');
           } else {
           // Since form is now valid, prevent default behavior
           evt.preventDefault();
+		  var name = document.getElementById("firstName").value;
+		  var email = document.getElementById("emailInput").value;
           modal.style.display = "block";
+		  document.getElementById("modalOuput").innerHTML = "Thank you"+" "+name+", "+"for signing up for a Demo class."+" "+"I will contact you at"+" "+email+" "+"to arrange your Demo class.";
 		 
         }
         
