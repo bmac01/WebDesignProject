@@ -69,7 +69,7 @@ dl.text-expand, #my-justify{
 
 /*fix for large screen to keep the footer on the bottom on service and contact html*/  
 .mid-content {
-  min-height: calc(100vh - 350px);
+  min-height: calc(100vh - 325px);
 }
 
 
