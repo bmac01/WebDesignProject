@@ -67,12 +67,11 @@ dl.text-expand, #my-justify{
   color:white;
 }
 
-/*fix for large screen to stretch mid section content and keep the footer on the bottom on service html*/  
-@media screen and (max-height: 1366px) and (min-width: 700px) {
-  .main-wrapper{
-    height:100vh;
-  }
+/*fix for large screen to keep the footer on the bottom on service and contact html*/  
+.mid-content {
+  min-height: calc(100vh - 350px);
 }
+
 
 
 .user-content p {
